@@ -9,4 +9,4 @@ jobs:
         azureSubscription: AzureDevExtServiceConnection
         scriptType: 'pscore'
         scriptLocation: 'inlineScript'
-        inlineScript: 'az devcenter dev environment create --dev-center-name dc-poc-dev-eus --project-name webappdev --catalog-name simple_devcenter --environment-definition-name ${{ variables.environmentName }}--environment-type CICD --name adesamplecicd --parameters Environments/${{ variables.environmentName }}/ade.parameters.json '
+        inlineScript: 'az devcenter dev environment create --dev-center-name dc-poc-dev-eus --project-name webappdev --catalog-name simple_devcenter --environment-definition-name ${{ variables.environmentName }} --environment-type CICD --name adesamplecicd --parameters Environments/${{ variables.environmentName }}/ade.parameters.json '
